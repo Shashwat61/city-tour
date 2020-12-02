@@ -23,8 +23,7 @@ constructor(){
   render(){
     const {id,city,img,name,info}=this.props.tour;
     const {removeTour}=this.props;
-    let textinfo=this.state.showinfo ? this.props.tour.info:"";
-    return (
+        return (
       <article className="tour">
       <div className="img-container">
       <img src={img} alt=""/>
@@ -39,9 +38,9 @@ constructor(){
 <div className="tour-info">
 <h3>{city}</h3>
 <h4>{name}</h4>
-<h5><span  onClick={this.handleClick}><i className="fas fa-caret-square-down"/></span></h5>
-{this.state.showinfo}
- <p>{textinfo}</p>
+<h5>info{" "}<span onClick={this.handleClick}><i className="fas fa-caret-square-down"/></span></h5>
+{this.state.showinfo && <p>{info}</p>}
+
 
 </div>
       </article>
