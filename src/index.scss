@@ -1,0 +1,16 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+$black:#222;
+$grey:#ececec;
+$green:#82b340;
+$white:#fff;
+
+body{
+  background:$black;
+  color:$white;
+  font-family: 'Abel', sans-serif;
+}
